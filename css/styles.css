@@ -25,7 +25,9 @@ p {
   margin: 0;
 }
 .container {
-  width: 1200px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -55,6 +57,10 @@ a {
 .main-nav-contact {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+nav {
+  display: flex;
 }
 
 /* site nav */
@@ -74,12 +80,16 @@ a {
 
   display: flex;
 }
+.link {
+  margin-top: 36px;
+}
 .link-nav {
   margin-left: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
 }
+
 .link-nav .link {
   letter-spacing: 0.03em;
   color: var(--accent-color);
@@ -163,6 +173,9 @@ a {
 
   padding-top: 10px;
 }
+.description {
+  padding-left: 30px;
+}
 .container .images {
   margin-bottom: 94px;
   display: block;
@@ -178,12 +191,18 @@ a {
 .image {
   left: 215px;
   top: 1061px;
+
+  display: inline-flex;
+}
+.image-human {
+  margin-right: 30px;
 }
 .section-title-name {
   letter-spacing: 0.03em;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
 
   padding-top: 30px;
   padding-bottom: 10px;
@@ -194,16 +213,24 @@ a {
   color: var(--complementary-text);
   font-size: 16px;
   line-height: 1.2;
+  text-align: center;
 }
 /* Footer */
 .footer {
   width: 1600px;
   background-color: var(--primary-text-color);
 }
+.container-footer {
+  margin-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .company-logo-white {
   letter-spacing: 0.03em;
   color: var(--complementary-color);
   font-size: 26px;
+
+  display: inline-block;
 }
 .address {
   letter-spacing: 0.03em;
@@ -244,6 +271,17 @@ ul {
   background-color: var(--accent-color);
 }
 /* Портфолио */
+.images-portfolio {
+  display: flex;
+}
+.image-portfolio {
+  margin-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.image-portfolio:nth-child(3n) {
+  margin-right: 0;
+}
 .text-portfolio {
   letter-spacing: 0.06em;
   font-weight: 700;
