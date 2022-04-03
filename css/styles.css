@@ -36,7 +36,7 @@ a {
   color: var(--title-text-color);
 }
 .header {
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
 }
 .list {
   list-style: none;
@@ -53,8 +53,9 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-
-  margin-left: 50px;
+}
+.work-mail-li:not(:first-child) {
+margin-left: 50px;
 }
 /* Main-nav-contact */
 .main-nav-contact {
@@ -67,7 +68,6 @@ nav {
 }
 
 /* site nav */
-
 .sait-nav .link-nav {
   color: var(--title-text-color);
 }
@@ -83,11 +83,14 @@ nav {
 
   display: flex;
 }
+.sait-nav-li:not(:first-child) {
+  margin-left: 50px;
+}
 .link {
-  margin-top: 36px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .link-nav {
-  margin-left: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
   display: block;
@@ -126,7 +129,8 @@ nav {
   background-color: var(--primary-text-color);
   text-align: center;
   padding: 0;
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   letter-spacing: 0.06em;
@@ -137,7 +141,6 @@ nav {
   text-align: center;
   text-transform: uppercase;
 
-  padding-top: 200px;
   margin-bottom: 30px;
 }
 .button-clik {
@@ -149,16 +152,20 @@ nav {
   font-size: 16px;
   line-height: 1.9;
 
-  border-radius: 4px;
   padding: 10 32px;
   min-width: 200px;
   min-height: 50px;
-  margin-bottom: 200px;
 }
 /* section */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+.activity {
+  padding-top: 0;
+}
+.team {
+  background-color: #f5f4fa;
 }
 .text {
   letter-spacing: 0.03em;
@@ -176,8 +183,8 @@ nav {
 
   padding-top: 10px;
 }
-.description {
-  padding-left: 30px;
+.description:not(:first-child) {
+  margin-left: 30px;
 }
 .container .images {
   margin-bottom: 94px;
@@ -190,12 +197,16 @@ nav {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+
+  margin-bottom: 50px;
 }
 .image {
   left: 215px;
   top: 1061px;
 
   display: inline-flex;
+  max-width: 100%;
+  height: auto;
   margin-right: 30px;
 }
 .image:nth-child(3n) {
@@ -211,7 +222,6 @@ nav {
   line-height: 1.2;
   text-align: center;
 
-  padding-top: 30px;
   padding-bottom: 10px;
 }
 .position {
@@ -222,15 +232,23 @@ nav {
   line-height: 1.2;
   text-align: center;
 }
+.name-position {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* Footer */
 .footer {
   width: 1600px;
   background-color: var(--primary-text-color);
-}
-.container-footer {
-  margin-left: 215px;
+
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-contacts {
+  margin-bottom: 9px;
+}
+.container-footer:not(:first-child) {
+  margin-left: 215px;
 }
 .company-logo-white {
   letter-spacing: 0.03em;
@@ -263,10 +281,25 @@ nav {
 ul {
   list-style: none;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .btn {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+.btn-list:not(:last-child) {
+  margin-right: 8px;
 }
 .pointer {
   color: var(--title-text-color);
@@ -278,7 +311,10 @@ ul {
   padding: 6 22px;
   min-width: 73px;
   min-height: 38px;
-  margin-right: 8px;
+}
+.oll {
+  color: var(--complementary-color);
+  background-color: var(--accent-color);
 }
 .pointer:hover {
   color: var(--complementary-color);
@@ -310,4 +346,8 @@ ul {
   letter-spacing: 0.03em;
   font-size: 16px;
   line-height: 1.9;
+}
+.portfolio-filter {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
