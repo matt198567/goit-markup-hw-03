@@ -193,6 +193,7 @@ nav {
   font-size: 14px;
   line-height: 1.7;
 
+  max-width: 270px;
   padding-top: 10px;
 }
 .description:not(:first-child) {
