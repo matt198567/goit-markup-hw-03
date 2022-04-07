@@ -21,31 +21,30 @@ body {
 h1,
 h2,
 h3,
-p,
-ul {
+p {
   margin: 0 auto;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  margin-left: 215px;
-  padding: 0;
 }
-
 a {
   text-decoration: none;
   color: var(--title-text-color);
 }
 .header {
-  width: 1600px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .list {
   list-style: none;
   
-  margin-left: 331px;
+  margin-left: auto;
   padding: 0;
   display: flex;
 }
@@ -132,10 +131,8 @@ nav {
 }
 /* hero */
 .hero {
-  width: 1600px;
   background-color: var(--primary-text-color);
   text-align: center;
-  padding: 0;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -170,13 +167,11 @@ nav {
 }
 .section-title {
   display: flex;
-  padding: 0;
 }
 .activity {
   padding-top: 0;
 }
 .team {
-  width: 1600px;
   background-color: #f5f4fa;
 }
 .text {
@@ -199,10 +194,6 @@ nav {
 .description:not(:first-child) {
   margin-left: 30px;
 }
-.container .images {
-  margin-bottom: 94px;
-  display: block;
-}
 .section-title-two {
   letter-spacing: 0.03em;
   font-weight: bold;
@@ -214,20 +205,21 @@ nav {
   margin-bottom: 50px;
 }
 .images-ul {
-  padding: 0;
+  display: flex;
 }
-.image {
-  left: 215px;
-  top: 1061px;
-
-  display: inline-flex;
+img {
+  display: block;
   max-width: 100%;
   height: auto;
-  margin-right: 30px;
-  padding: 0;
+}
+.image {
+margin-right: 30px;
 }
 .image:nth-child(3n) {
   margin-right: 0;
+}
+.images {
+  display: flex;
 }
 .image-human {
   margin-right: 30px;
@@ -239,7 +231,7 @@ nav {
   line-height: 1.2;
   text-align: center;
 
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .position {
   letter-spacing: 0.03em;
@@ -257,13 +249,12 @@ nav {
 }
 /* Footer */
 .footer {
-  width: 1600px;
   background-color: var(--primary-text-color);
 
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-contacts {
+.footer-contacts:not(:last-child) {
   margin-bottom: 9px;
 }
 .company-logo-white {
@@ -273,16 +264,14 @@ nav {
 
   display: inline-block;
 }
-.footer-items {
-  padding: 0;
-  padding-top: 20px;
-}
 .address {
   letter-spacing: 0.03em;
   color: var(--complementary-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+
+  margin-top: 20px;
 }
 .contact {
   color: rgba(255, 255, 255, 0.6);
@@ -351,9 +340,6 @@ ul {
   margin-right: 30px;
   display: flex;
   flex-wrap: wrap;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
 }
 .image-portfolio:nth-child(3n) {
   margin-right: 0;
@@ -371,7 +357,8 @@ ul {
   line-height: 1.9;
 }
 .portfolio-filter {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
